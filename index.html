@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="M/s. LPH PHARMA PVT LTD — A premier pharmaceutical distribution enterprise with 15,000+ specialized products, serving 2,000+ healthcare customers." />
+  <title>LPH Pharma Pvt Ltd — Pharmaceutical Distribution</title>
+  <link rel="icon" type="image/png" href="images/LPH-logo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ══════════ MOBILE NAV ══════════ -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <div class="mobile-nav-panel">
+
+    <div class="mobile-nav-header">
+      <a href="index.html" class="mobile-nav-logo">
+        <img src="images/LPH-logo.png" alt="LPH Pharma Pvt Ltd" />
+      </a>
+      <button class="mobile-nav-close" id="mobileClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+
+      <div class="mobile-nav-divider"></div>
+
+      <div class="mobile-nav-group">
+        <button class="mobile-nav-group-btn" type="button">
+          Place Order
+          <svg class="mobile-nav-chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="mobile-nav-sub-links">
+          <a href="http://59.92.124.214/liveorder/" target="_blank" rel="noopener" class="mobile-nav-sub-link">Order Link — Server 1</a>
+          <a href="http://139.167.199.82/liveorder/" target="_blank" rel="noopener" class="mobile-nav-sub-link">Order Link — Server 2</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav-group">
+        <button class="mobile-nav-group-btn" type="button">
+          Sales Statement
+          <svg class="mobile-nav-chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="mobile-nav-sub-links">
+          <a href="http://139.167.199.81/livestocksales/" target="_blank" rel="noopener" class="mobile-nav-sub-link">Statement — Server 1</a>
+          <a href="http://139.167.199.82/livestocksales/" target="_blank" rel="noopener" class="mobile-nav-sub-link">Statement — Server 2</a>
+        </div>
+      </div>
+
+      <div class="mobile-nav-divider"></div>
+
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <a href="contact.html" class="btn btn-primary">
+        Enquire Now
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<header id="navbar">
+  <div class="container">
+    <nav class="nav-inner">
+
+      <a href="index.html" class="nav-logo">
+        <img src="images/LPH-logo.png" alt="LPH Pharma Pvt Ltd" />
+      </a>
+
+      <ul class="nav-links" role="list">
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Home</a>
+        </li>
+
+        <!-- Place Order Dropdown -->
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">
+            Place Order
+            <svg class="nav-chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <div class="nav-dropdown-label">Select Server</div>
+            <a href="http://59.92.124.214/liveorder/" target="_blank" rel="noopener" class="nav-dropdown-item" role="menuitem">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+              Order Link — Server 1
+            </a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="http://139.167.199.82/liveorder/" target="_blank" rel="noopener" class="nav-dropdown-item" role="menuitem">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+              Order Link — Server 2
+            </a>
+          </div>
+        </li>
+
+        <!-- Sales Statement Dropdown -->
+        <li class="nav-item has-dropdown">
+          <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">
+            Sales Statement
+            <svg class="nav-chevron" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <div class="nav-dropdown-label">Select Server</div>
+            <a href="http://139.167.199.81/livestocksales/" target="_blank" rel="noopener" class="nav-dropdown-item" role="menuitem">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H8V10h4V6h2v4h4v2z"/></svg>
+              Sales Statement — Server 1
+            </a>
+            <div class="nav-dropdown-divider"></div>
+            <a href="http://139.167.199.82/livestocksales/" target="_blank" rel="noopener" class="nav-dropdown-item" role="menuitem">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 9h-4v4h-2v-4H8V10h4V6h2v4h4v2z"/></svg>
+              Sales Statement — Server 2
+            </a>
+          </div>
+        </li>
+
+      </ul>
+
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <video class="hero-video-bg" autoplay muted loop playsinline>
+    <source src="videos/hero-video-LPH.mp4" type="video/mp4">
+  </video>
+  <div class="hero-bg-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-left">
+
+        <div class="hero-badge">
+          <div class="hero-badge-dot">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          Premier Pharmaceutical Distributor
+        </div>
+
+        <h1 class="hero-headline">
+          Order Products<br/>
+          <span class="line-accent">Online</span>
+        </h1>
+
+        <p class="hero-desc">
+          Cardiology, Neurology, Nephrology, Diabetology, Pediatrics, Anti-Infectives,
+          Nutraceuticals and many more pharmaceutical products available with us.
+        </p>
+
+        <div class="hero-categories">
+          <span class="hero-cat-pill"><span class="hero-cat-pill-dot"></span>Cardiology</span>
+          <span class="hero-cat-pill"><span class="hero-cat-pill-dot"></span>Neurology</span>
+          <span class="hero-cat-pill"><span class="hero-cat-pill-dot"></span>Nephrology</span>
+          <span class="hero-cat-pill"><span class="hero-cat-pill-dot"></span>Diabetology</span>
+          <span class="hero-cat-pill"><span class="hero-cat-pill-dot"></span>Pediatrics</span>
+          <span class="hero-cat-pill"><span class="hero-cat-pill-dot"></span>Anti-Infectives</span>
+          <span class="hero-cat-pill"><span class="hero-cat-pill-dot"></span>Nutraceuticals</span>
+          <span class="hero-cat-pill"><span class="hero-cat-pill-dot"></span>&amp; Many More</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">
+            Know More
+            <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+          <a href="contact.html" class="btn btn-outline-white">
+            Contact Us
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-main">
+          <div class="hero-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+          </div>
+          <div class="hero-card-title">Product Portfolio</div>
+          <div class="hero-card-value">15,000+</div>
+          <div class="hero-card-bar"><div class="hero-card-bar-fill"></div></div>
+          <div class="hero-card-bar-label">Specialized pharmaceutical products</div>
+        </div>
+
+        <div class="hero-float-card hero-float-card-1">
+          <div class="hero-float-icon green">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <div>
+            <div class="hero-float-label">Healthcare Customers</div>
+            <div class="hero-float-value">2,000+ Partners</div>
+          </div>
+        </div>
+
+        <div class="hero-float-card hero-float-card-2">
+          <div class="hero-float-icon blue">
+            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <div>
+            <div class="hero-float-label">Trained Professionals</div>
+            <div class="hero-float-value">100+ Team</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT US ══════════ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-image-wrap reveal">
+        <div class="about-img-card">
+          <div class="about-img-pattern"></div>
+          <div class="about-img-content">
+            <div class="quote-slider" id="quoteSlider">
+              <div class="quote-slide active">
+                <p class="quote-text">"Bridging the gap between global healthcare innovators and medical providers — one delivery at a time."</p>
+                <span class="quote-attr">Our Core Commitment</span>
+              </div>
+              <div class="quote-slide">
+                <p class="quote-text">"The right product, at the right price, to the right place — every time, for every customer."</p>
+                <span class="quote-attr">Our Mission</span>
+              </div>
+              <div class="quote-slide">
+                <p class="quote-text">"15,000+ specialized products, 350+ suppliers, 2,000+ healthcare partners — all connected through operational excellence."</p>
+                <span class="quote-attr">Our Strength</span>
+              </div>
+              <div class="quote-slide">
+                <p class="quote-text">"Trusted by independent pharmacies, corporate hospitals, and medical institutions — built on integrity and precision."</p>
+                <span class="quote-attr">Our Network</span>
+              </div>
+            </div>
+            <div class="about-img-divider"></div>
+            <span class="about-img-since">Trusted &bull; Compliant &bull; Precise</span>
+            <div class="quote-dots" id="quoteDots">
+              <button class="quote-dot active" data-index="0" aria-label="Quote 1"></button>
+              <button class="quote-dot" data-index="1" aria-label="Quote 2"></button>
+              <button class="quote-dot" data-index="2" aria-label="Quote 3"></button>
+              <button class="quote-dot" data-index="3" aria-label="Quote 4"></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="about-content reveal reveal-delay-2">
+        <div class="section-label">About Us</div>
+        <h2 class="section-title">M/s. LPH PHARMA<br/>PVT LTD</h2>
+        <p class="section-sub" style="margin-top:18px;">
+          LPH Pharma Pvt Ltd, a premier pharmaceutical distribution enterprise dedicated
+          to bridging the gap between global healthcare innovators and medical providers.
+          Operating with a robust portfolio of 15,000+ specialized products, we streamline
+          the healthcare supply chain through operational excellence, modern infrastructure,
+          and uncompromising compliance.
+        </p>
+        <p class="section-sub" style="margin-top:14px;">
+          As a trusted channel partner, we proudly support an expanding network of 2,000+
+          healthcare customers, including independent pharmacies, corporate hospitals, and
+          medical institutions. Driven by a dedicated team of 100+ trained professionals,
+          LPH Pharma guarantees that life-saving medicine is delivered safely, transparently,
+          and precisely when it matters most.
+        </p>
+
+        <a href="contact.html" class="btn btn-primary" style="margin-top:36px;">
+          Contact Us
+          <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ STATS — Our Amazing Healthcare Packages ══════════ -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-header reveal">
+      <div class="section-label" style="background:rgba(255,255,255,0.14);color:rgba(255,255,255,0.85);border:1px solid rgba(255,255,255,0.22);">Our Amazing Healthcare Packages</div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+        </div>
+        <span class="stat-num" data-count="15000" data-suffix="+">0+</span>
+        <span class="stat-label">Products</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+        </div>
+        <span class="stat-num" data-count="350" data-suffix="+">0+</span>
+        <span class="stat-label">Suppliers</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <span class="stat-num" data-count="2000" data-suffix="+">0+</span>
+        <span class="stat-label">Healthcare Customers</span>
+      </div>
+      <div class="stat-item reveal reveal-delay-4">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <span class="stat-num" data-count="100" data-suffix="+">0+</span>
+        <span class="stat-label">Staffs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ VISION ══════════ -->
+<section class="vm-section" id="vision">
+  <div class="container">
+    <div class="vm-row reveal">
+      <div class="vm-image-col">
+        <img src="images/our-vision-LPH.png" alt="Our Vision" class="vm-section-img" />
+      </div>
+      <div class="vm-text-col">
+        <div class="section-label">Our Vision</div>
+        <h2 class="section-title">Where We're<br/>Headed</h2>
+        <div class="vm-points-list" style="margin-top:28px;">
+          <div class="vm-point-item">
+            <div class="vm-point-bullet"></div>
+            <p>Contributing to the healthcare ecosystem by ensuring that life-saving medicines are always within reach of every provider and patient.</p>
+          </div>
+          <div class="vm-point-item">
+            <div class="vm-point-bullet"></div>
+            <p>Becoming the region's most trusted and dependable pharmaceutical distribution network through consistent service and operational integrity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ MISSION ══════════ -->
+<section class="vm-section vm-section-alt" id="mission">
+  <div class="container">
+    <div class="vm-row vm-row-reverse reveal">
+      <div class="vm-image-col">
+        <img src="images/our-mision-LPH.png" alt="Our Mission" class="vm-section-img" />
+      </div>
+      <div class="vm-text-col">
+        <div class="section-label">Our Mission</div>
+        <h2 class="section-title">What Drives<br/>Every Decision</h2>
+        <div class="vm-points-list" style="margin-top:28px;">
+          <div class="vm-point-item">
+            <div class="vm-point-bullet"></div>
+            <p>To deliver an unparalleled standard of excellence in pharmaceutical distribution, engineering our supply chain so that stock deficits, critical shortages, or the unavailability of essential medications never compromise healthcare delivery — especially in times of urgent need.</p>
+          </div>
+          <div class="vm-point-item">
+            <div class="vm-point-bullet"></div>
+            <p>We consider it our definitive duty to consistently provide the right product, at the right price, to the right place for our customers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CORE VALUES ══════════ -->
+<section class="core-values" id="values">
+  <div class="container">
+    <div class="cv-header reveal">
+      <div class="section-label">What We Stand For</div>
+      <h2 class="section-title">Our Core Values</h2>
+      <p class="section-sub">Three pillars that guide every decision, every delivery, and every relationship we build.</p>
+    </div>
+
+    <div class="cv-grid">
+      <div class="cv-card reveal reveal-delay-1">
+        <div class="cv-card-body">
+          <div class="cv-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          <h3 class="cv-title">Ethical &amp; Regulatory Standards</h3>
+          <p class="cv-desc">Holding ourselves to the highest ethical and regulatory standards to ensure every product is sourced directly, handled safely, and delivered with absolute integrity.</p>
+        </div>
+      </div>
+
+      <div class="cv-card reveal reveal-delay-2">
+        <div class="cv-card-body">
+          <div class="cv-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+          </div>
+          <h3 class="cv-title">Inventory &amp; Logistics Diligence</h3>
+          <p class="cv-desc">Managing our inventory and logistics diligently so pharmacies and hospitals always have uninterrupted access to essential medicines when they need them most.</p>
+        </div>
+      </div>
+
+      <div class="cv-card reveal reveal-delay-3">
+        <div class="cv-card-body">
+          <div class="cv-icon">
+            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <h3 class="cv-title">Transparent Long-Term Relationships</h3>
+          <p class="cv-desc">Building transparent, long-term relationships with our suppliers and healthcare clients to foster collaborative growth across the entire medical ecosystem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <img src="images/LPH-logo.png" alt="LPH Pharma Pvt Ltd" class="footer-logo" />
+        <p class="footer-tagline">
+          M/s. LPH PHARMA PVT LTD — a premier pharmaceutical distribution enterprise
+          dedicated to bridging the gap between healthcare innovators and medical providers.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About Us</a></li>
+          <li><a href="#vision" class="footer-link">Vision</a></li>
+          <li><a href="#mission" class="footer-link">Mission</a></li>
+          <li><a href="#values" class="footer-link">Core Values</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Place Order</h4>
+        <ul class="footer-links">
+          <li><a href="http://59.92.124.214/liveorder/" target="_blank" rel="noopener" class="footer-link">Order Link — Server 1</a></li>
+          <li><a href="http://139.167.199.82/liveorder/" target="_blank" rel="noopener" class="footer-link">Order Link — Server 2</a></li>
+        </ul>
+        <h4 class="footer-col-title" style="margin-top:28px;">Sales Statement</h4>
+        <ul class="footer-links">
+          <li><a href="http://139.167.199.81/livestocksales/" target="_blank" rel="noopener" class="footer-link">Statement — Server 1</a></li>
+          <li><a href="http://139.167.199.82/livestocksales/" target="_blank" rel="noopener" class="footer-link">Statement — Server 2</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Contact</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
+          <a href="tel:+919840498404" class="footer-contact-link">+91 98404 98404</a>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <a href="mailto:info@lphpharma.com" class="footer-contact-link">info@lphpharma.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <span class="footer-copy">&copy; 2026 M/s. LPH PHARMA PVT LTD. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
